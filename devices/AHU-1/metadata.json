@@ -25,6 +25,11 @@
       }
     }
   },
+  "features": {
+    "system.software.updates": {
+      "stage": "preview"
+    }
+  },
   "pointset": {
     "points": {
       "filter_alarm_pressure_status": {
@@ -81,6 +86,32 @@
       "invalid": {
         "target_point": "filter_differential_pressure_sensor",
         "target_value": 15
+      }
+    },
+    "blob_update_targets": {
+      "success": {
+        "blob_name": "pubber_module",
+        "url": "data:application/json;base64,djI=",
+        "sha256": "fb04dcb6970e4c3d1873de51fd5a50d7bb46b3383113602665c350ec40b5f990",
+        "version": "v2"
+      },
+      "fail_fetch": {
+        "blob_name": "pubber_module",
+        "url": "http://localhost:1/bogus",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "v2"
+      },
+      "fail_parse": {
+        "blob_name": "pubber_module",
+        "url": "data:application/json;base64,malformed_non_base64!",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "version": "v2"
+      },
+      "fail_hash": {
+        "blob_name": "pubber_module",
+        "url": "data:application/json;base64,djI=",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "v2"
       }
     }
   },
