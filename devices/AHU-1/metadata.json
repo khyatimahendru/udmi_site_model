@@ -91,8 +91,8 @@
     "blob_update_targets": {
       "success": {
         "blob_name": "pubber_module",
-        "url": "data:application/json;base64,djI=",
-        "sha256": "fb04dcb6970e4c3d1873de51fd5a50d7bb46b3383113602665c350ec40b5f990",
+        "url": "data:application/json;base64,eyJ2ZXJzaW9uIjoidjIifQ==",
+        "sha256": "0923c04472e891c960e0339a6c2ffaa1228be79ee8da8171380cc4b4a66e7c37",
         "version": "v2"
       },
       "fail_fetch": {
@@ -109,8 +109,20 @@
       },
       "fail_hash": {
         "blob_name": "pubber_module",
-        "url": "data:application/json;base64,djI=",
+        "url": "data:application/json;base64,eyJ2ZXJzaW9uIjoidjIifQ==",
         "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "v2"
+      },
+      "fail_incompatible": {
+        "blob_name": "pubber_module",
+        "url": "data:application/json;base64,eyJ2ZXJzaW9uIjoidjIiLCJzaW11bGF0ZSI6ImhhcmR3YXJlSW5jb21wYXRpYmxlIn0=",
+        "sha256": "d5d2f4eb09f8d3c37dc2880a0f8f96619418a417a8d735ebd67c7639aa843240",
+        "version": "v2"
+      },
+      "fail_dependency": {
+        "blob_name": "pubber_module",
+        "url": "data:application/json;base64,eyJ2ZXJzaW9uIjoidjIiLCJzaW11bGF0ZSI6InNvZnR3YXJlRGVwZW5kZW5jeU1pc21hdGNoIn0=",
+        "sha256": "af7c2b897ecd1b422ef62ffe43e3dc6e8a01307c3efccd3e20c2e55c78f8ae1a",
         "version": "v2"
       }
     }
