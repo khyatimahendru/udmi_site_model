@@ -8,6 +8,11 @@
       "bacnet": {}
     }
   },
+  "features": {
+    "system.software.updates": {
+      "stage": "preview"
+    }
+  },
   "localnet": {
     "families": {
       "bacnet": {
@@ -81,6 +86,32 @@
       "invalid": {
         "target_point": "filter_differential_pressure_sensor",
         "target_value": 15
+      }
+    },
+    "blob_update_targets": {
+      "success": {
+        "blob_name": "pubber_module",
+        "url": "data:application/json;base64,eyJ2ZXJzaW9uIjoidjIifQ==",
+        "sha256": "0923c04472e891c960e0339a6c2ffaa1228be79ee8da8171380cc4b4a66e7c37",
+        "version": "v2"
+      },
+      "fail_fetch": {
+        "blob_name": "pubber_module",
+        "url": "http://localhost:1/bogus",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "v2"
+      },
+      "fail_parse": {
+        "blob_name": "pubber_module",
+        "url": "data:application/json;base64,bm90IGEganNvbg==",
+        "sha256": "80858a2561ad177f6563c3f87b4943ca296c9ba4e6da14fe7400638568d8ccd5",
+        "version": "v2"
+      },
+      "fail_hash": {
+        "blob_name": "pubber_module",
+        "url": "data:application/json;base64,eyJ2ZXJzaW9uIjoidjIifQ==",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "v2"
       }
     }
   },
